@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  /* min-width: 0; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 550;
+  color: rgb(69, 92, 101);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(69, 92, 101);
+}
+
+.navbar-container {
+  position: absolute;
+  padding: 0 80px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 52px;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  color: rgb(254, 242, 57);
+  background-color: rgb(254, 242, 57);
+  transform: skewY(-2deg);
+  flex-shrink: 0;
+}
+
+.nav-left-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 46px;
+  background-color: rgb(69, 92, 101);
+  transform: skewY(2deg) translate(-5%, -3%);
+}
+
+.nav-right {
+  width: 600px;
+  height: 46px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: rgb(254, 242, 57);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.hero-image {
+  height: 735px;
+  background-image: url("../images/jayson-hinrichsen-G4YV8aylNmw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 34%;
+  filter: brightness(85%);
+}
+
+.hero-text {
+  padding: 60px 80px 100px 40px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  height: 800px;
+  flex-basis: 50%;
+  max-width: 50%;
+  min-width: 50%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  background-color: rgb(69, 92, 101);
+  color: rgb(254, 242, 57);
+  font-size: 1.5em;
+  line-height: 40px;
+  transform: translate(100px, -225px);
+  clip-path: polygon(0 4%, 92% 0, 98% 78%, 5% 79%);
+}
+
+.footer-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 70px;
+  bottom: 0;
+  height: fit-content;
+  min-height: 80px;
+  width: 100vw;
+  background-color: rgb(254, 242, 57);
+  font-size: 0.85em;
+  font-weight: 100;
+}
+
+.footer-container .icon-link {
+  font-size: 1.8em;
+  flex-shrink: 0;
+  margin-left: 25%;
+}
+
+.footer-container a {
+  text-decoration: underline;
+}
